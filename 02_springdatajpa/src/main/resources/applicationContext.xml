@@ -31,7 +31,8 @@
         <!--JPA的供应商适配器-->
         <property name="jpaVendorAdapter">
             <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
-                <property name="generateDdl" value="false" />
+                <!--是否自动创建数据库表-->
+                <property name="generateDdl" value="true" />
                 <property name="database" value="MYSQL" />
                 <property name="databasePlatform" value="org.hibernate.dialect.MySQLDialect" />
                 <property name="showSql" value="true" />

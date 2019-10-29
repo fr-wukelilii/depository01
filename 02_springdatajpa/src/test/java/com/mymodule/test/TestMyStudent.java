@@ -23,8 +23,8 @@ public class TestMyStudent {
     @Transactional
     public void testDemo(){
         //查所有
-//        List<MyStudent> all = studentDao.findAll();
-//        all.forEach(System.out::println);
+        List<MyStudent> all = studentDao.findAll();
+        all.forEach(System.out::println);
         //查单行findOne
 //        MyStudent one = studentDao.findOne(20L);
 //        System.out.println(one);
