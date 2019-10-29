@@ -1,12 +1,11 @@
 package com.mymodule.service;
 
-public class UserService {
+import com.mymodule.entity.MyStudent;
 
-    public static void main(String[] args) {
-        System.out.println("aaa");
-        System.out.println("bbbb");
-        System.out.println("cccc");
+import java.util.List;
 
-        System.out.println("nenenene");
-    }
+public interface UserService {
+
+    public List<MyStudent> findalll();
+
 }
